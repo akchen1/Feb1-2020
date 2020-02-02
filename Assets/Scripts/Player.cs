@@ -76,7 +76,6 @@ public class Player : MonoBehaviour
             rb.velocity = new Vector2(moveDirectionX * speed, rb.velocity.y);
         } else if (!isGrounded && moveDirectionX != 0)
         {
-            print("airmove");
             Vector2 force = new Vector2(airMoveForce * moveDirectionX, 0);
             rb.AddForce(force);
 
