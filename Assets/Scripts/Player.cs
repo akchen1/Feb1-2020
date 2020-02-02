@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float speed;
-    public float jumpForce = 16f;
-    public float accelerateDownForce = 10f;
-    public float airMoveForce = 135f;
+    public float speed = 10f;
+    public float jumpForce = 20f;
+    public float accelerateDownForce = 3000f;
+    public float fallMultiplier = 2.5f;
+    public float lowJumpMultiplier = 2f;
+    public float airMoveForce = 150f;
     public float groundCheckRadius;
     public float airDrag = 0.95f;
 
@@ -19,7 +21,7 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D rb;
     private float moveDirectionX;
-    private float variableJumpHeightMultiplier = 0.5f;
+    private float variableJumpHeightMultiplier = 0.8f;
     private bool isFacingRight = true;
     private bool isGrounded;
     private bool canJump;
@@ -63,7 +65,7 @@ public class Player : MonoBehaviour
         {
             if (!isGrounded)
             {
-                rb.velocity = new Vector2(rb.velocity.x, -accelerateDownForce);
+                rb.AddForce(new Vector2(0, -accelerateDownForce));
             }
         }
 
@@ -86,6 +88,11 @@ public class Player : MonoBehaviour
         } else if (!isGrounded && moveDirectionX == 0)
         {
             rb.velocity = new Vector2(rb.velocity.x * airDrag, rb.velocity.y);
+        }
+
+        if (!isGrounded && rb.velocity.y < 0)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, Physics2D.gravity.y * (fallMultiplier - 1));
         }
     }
 
