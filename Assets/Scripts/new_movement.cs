@@ -23,6 +23,8 @@ public class new_movement : MonoBehaviour
     public int defaultAdditionalJumps = 1;
     int additionalJumps;
 
+    private bool isFacingRight = true;
+    private float x;
 
 
     void Start()
@@ -35,6 +37,7 @@ public class new_movement : MonoBehaviour
     void Update()
     {
         Move();
+        checkCharacterDirection();
         Jump();
         BetterJump();
         CheckIfGrounded();
@@ -43,11 +46,30 @@ public class new_movement : MonoBehaviour
 
     void Move()
     {
-        float x = Input.GetAxisRaw("Horizontal");
+        x = Input.GetAxisRaw("Horizontal");
 
         float moveBy = x * speed;
 
         rb.velocity = new Vector2(moveBy, rb.velocity.y);
+ 
+    }
+
+    private void checkCharacterDirection()
+    {
+        if (isFacingRight && x < 0)
+        {
+            flip();
+        }
+        else if (!isFacingRight && x > 0)
+        {
+            flip();
+        }
+    }
+
+    private void flip()
+    {
+        isFacingRight = !isFacingRight;
+        transform.Rotate(0f, 180f, 0f);
     }
 
     void Jump()
