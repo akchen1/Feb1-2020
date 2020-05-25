@@ -5,6 +5,7 @@ using UnityEngine;
 public class new_movement : MonoBehaviour
 {
     Rigidbody2D rb;
+    private Animator anim;
 
     public float speed;
     public float jumpForce;
@@ -30,6 +31,7 @@ public class new_movement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
 
         additionalJumps = defaultAdditionalJumps;
     }
@@ -51,7 +53,14 @@ public class new_movement : MonoBehaviour
         float moveBy = x * speed;
 
         rb.velocity = new Vector2(moveBy, rb.velocity.y);
- 
+
+        if (rb.velocity.x != 0) {
+            anim.SetBool("isRunning", true);
+        } else
+        {
+            anim.SetBool("isRunning", false);
+        }
+
     }
 
     private void checkCharacterDirection()

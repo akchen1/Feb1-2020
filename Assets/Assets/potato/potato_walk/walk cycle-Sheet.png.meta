@@ -1,43 +1,55 @@
 fileFormatVersion: 2
-guid: 83c79c90473a397428f269e3ee59eee9
+guid: a7708a9baf5773e4cbb49569cae95904
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7179615572669148130
-    second: 100088923_2564234713836420_6979681585280843776_n_0
+      213: 1649553819400257176
+    second: walk cycle-Sheet_0
   - first:
-      213: -7564003405157534586
-    second: 100088923_2564234713836420_6979681585280843776_n_1
+      213: 8876178683828970987
+    second: walk cycle-Sheet_1
   - first:
-      213: -3628623806526178431
-    second: 100088923_2564234713836420_6979681585280843776_n_2
+      213: -2158343191796655247
+    second: walk cycle-Sheet_2
   - first:
-      213: -62462806889891023
-    second: 100088923_2564234713836420_6979681585280843776_n_3
+      213: -561672544883930430
+    second: walk cycle-Sheet_3
   - first:
-      213: -5777191720753906085
-    second: 100088923_2564234713836420_6979681585280843776_n_4
+      213: -8517730443611571710
+    second: walk cycle-Sheet_4
   - first:
-      213: -3352142856279616391
-    second: 100088923_2564234713836420_6979681585280843776_n_5
+      213: 2579999143375296625
+    second: walk cycle-Sheet_5
   - first:
-      213: -7638946902452169951
-    second: 100088923_2564234713836420_6979681585280843776_n_6
+      213: -4837222485461546100
+    second: walk cycle-Sheet_6
   - first:
-      213: 3002188401934321470
-    second: 100088923_2564234713836420_6979681585280843776_n_7
+      213: 1212746497183649279
+    second: walk cycle-Sheet_7
   - first:
-      213: -3547265380875122520
-    second: 100088923_2564234713836420_6979681585280843776_n_8
+      213: 9205108960616776540
+    second: walk cycle-Sheet_0
   - first:
-      213: 4717865423560240125
-    second: 100088923_2564234713836420_6979681585280843776_n_9
+      213: 7543382868996750275
+    second: walk cycle-Sheet_1
   - first:
-      213: -1494955072942538929
-    second: 100088923_2564234713836420_6979681585280843776_n_10
+      213: -3057450056025610333
+    second: walk cycle-Sheet_2
   - first:
-      213: -9084217339540742988
-    second: 100088923_2564234713836420_6979681585280843776_n_11
+      213: 5456620668193719808
+    second: walk cycle-Sheet_3
+  - first:
+      213: -6638792945823101227
+    second: walk cycle-Sheet_4
+  - first:
+      213: 5695134665730795849
+    second: walk cycle-Sheet_5
+  - first:
+      213: 5852335895220320730
+    second: walk cycle-Sheet_6
+  - first:
+      213: -638678140289580213
+    second: walk cycle-Sheet_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -78,7 +90,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -100,7 +112,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -112,7 +124,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -124,7 +136,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -135,13 +147,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 100088923_2564234713836420_6979681585280843776_n_1
+      name: walk cycle-Sheet_0
       rect:
         serializedVersion: 2
-        x: 138
-        y: 21
-        width: 257
-        height: 300
+        x: 34
+        y: 0
+        width: 232
+        height: 336
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6847db39af2470790800000000000000
-      internalID: -7564003405157534586
+      spriteID: c53045434dd1fbf70800000000000000
+      internalID: 9205108960616776540
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 100088923_2564234713836420_6979681585280843776_n_2
+      name: walk cycle-Sheet_1
       rect:
         serializedVersion: 2
-        x: 405
-        y: 21
-        width: 257
-        height: 289
+        x: 331
+        y: 0
+        width: 291
+        height: 336
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18b3b7c8fd984adc0800000000000000
-      internalID: -3628623806526178431
+      spriteID: 3cb7157b0ca7fa860800000000000000
+      internalID: 7543382868996750275
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 100088923_2564234713836420_6979681585280843776_n_3
+      name: walk cycle-Sheet_2
       rect:
         serializedVersion: 2
-        x: 938
-        y: 21
-        width: 257
-        height: 289
+        x: 638
+        y: 0
+        width: 304
+        height: 336
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,20 +203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13b77a77866122ff0800000000000000
-      internalID: -62462806889891023
+      spriteID: 3a768148f51c195d0800000000000000
+      internalID: -3057450056025610333
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 100088923_2564234713836420_6979681585280843776_n_4
+      name: walk cycle-Sheet_3
       rect:
         serializedVersion: 2
-        x: 1205
-        y: 21
-        width: 257
-        height: 300
+        x: 970
+        y: 0
+        width: 292
+        height: 336
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,20 +224,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5eb2252dba43dfa0800000000000000
-      internalID: -5777191720753906085
+      spriteID: 006cdb9569fc9bb40800000000000000
+      internalID: 5456620668193719808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 100088923_2564234713836420_6979681585280843776_n_5
+      name: walk cycle-Sheet_4
       rect:
         serializedVersion: 2
-        x: 1471
-        y: 21
-        width: 258
-        height: 310
+        x: 1314
+        y: 0
+        width: 232
+        height: 336
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -233,20 +245,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 974171725dbca71d0800000000000000
-      internalID: -3352142856279616391
+      spriteID: 5de48d65df44ed3a0800000000000000
+      internalID: -6638792945823101227
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 100088923_2564234713836420_6979681585280843776_n_6
+      name: walk cycle-Sheet_5
       rect:
         serializedVersion: 2
-        x: 1738
-        y: 21
-        width: 257
-        height: 300
+        x: 1659
+        y: 0
+        width: 195
+        height: 336
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 123944dd3420df590800000000000000
-      internalID: -7638946902452169951
+      spriteID: 949a5eaedce290f40800000000000000
+      internalID: 5695134665730795849
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 100088923_2564234713836420_6979681585280843776_n_8
+      name: walk cycle-Sheet_6
       rect:
         serializedVersion: 2
-        x: 671
-        y: 21
-        width: 258
-        height: 278
+        x: 1979
+        y: 0
+        width: 195
+        height: 336
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -275,8 +287,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a8c5e82ee495cec0800000000000000
-      internalID: -3547265380875122520
+      spriteID: ad9ffdc5d7ca73150800000000000000
+      internalID: 5852335895220320730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk cycle-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 2299
+        y: 0
+        width: 194
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b438b328d95f227f0800000000000000
+      internalID: -638678140289580213
       vertices: []
       indices: 
       edges: []
