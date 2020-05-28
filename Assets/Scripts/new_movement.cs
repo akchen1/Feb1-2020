@@ -31,7 +31,7 @@ public class new_movement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
+        anim = gameObject.GetComponent<Animator>();
 
         additionalJumps = defaultAdditionalJumps;
     }
@@ -43,6 +43,7 @@ public class new_movement : MonoBehaviour
         Jump();
         BetterJump();
         CheckIfGrounded();
+        CheckAnimationStates();
     }
 
 
@@ -53,13 +54,6 @@ public class new_movement : MonoBehaviour
         float moveBy = x * speed;
 
         rb.velocity = new Vector2(moveBy, rb.velocity.y);
-
-        if (rb.velocity.x != 0) {
-            anim.SetBool("isRunning", true);
-        } else
-        {
-            anim.SetBool("isRunning", false);
-        }
 
     }
 
@@ -87,7 +81,9 @@ public class new_movement : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             additionalJumps--;
-        }
+            
+        }      
+
     }
 
     void BetterJump()
@@ -119,6 +115,41 @@ public class new_movement : MonoBehaviour
             }
             isGrounded = false;
         }
+
+        
     }
 
+    void CheckAnimationStates()
+    {
+        if (isGrounded)
+        {
+            anim.SetBool("isGrounded", true);
+            anim.SetBool("isFalling", false);
+            anim.SetBool("isJumping", false);
+            if (rb.velocity.x != 0)
+            {
+                anim.SetBool("isRunning", true);
+                anim.SetBool("isIdle", false);
+            }
+            else
+            {
+                anim.SetBool("isIdle", true);
+                anim.SetBool("isRunning", false);
+            }
+        } else
+        {
+            anim.SetBool("isGrounded", false);
+            if (rb.velocity.y > 0)
+            {
+                anim.SetBool("isJumping", true);
+                anim.SetBool("isFalling", false);
+                anim.SetBool("isIdle", false);
+            } else
+            {
+                anim.SetBool("isJumping", false);
+                anim.SetBool("isFalling", true);
+                anim.SetBool("isIdle", false);
+            }
+        }
+    }
 }
