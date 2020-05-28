@@ -50,8 +50,13 @@ public class new_movement : MonoBehaviour
     void Move()
     {
         x = Input.GetAxisRaw("Horizontal");
-
         float moveBy = x * speed;
+        if (Input.GetKey(KeyCode.LeftShift))
+        { 
+            moveBy = moveBy * 1.5f;
+        }
+
+        
 
         rb.velocity = new Vector2(moveBy, rb.velocity.y);
 
@@ -128,13 +133,26 @@ public class new_movement : MonoBehaviour
             anim.SetBool("isJumping", false);
             if (rb.velocity.x != 0)
             {
-                anim.SetBool("isRunning", true);
+                print(Mathf.Abs(rb.velocity.x) + "   " + speed);
+                if (Mathf.Abs(rb.velocity.x) > speed)
+                {
+                    anim.SetBool("isWalking", false);
+                    anim.SetBool("isRunning", true);
+                } else
+                {
+                    anim.SetBool("isRunning", false);
+                    anim.SetBool("isWalking", true);
+                }
+                
+
                 anim.SetBool("isIdle", false);
             }
             else
             {
                 anim.SetBool("isIdle", true);
                 anim.SetBool("isRunning", false);
+                anim.SetBool("isWalking", false);
+
             }
         } else
         {
